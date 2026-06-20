@@ -6,9 +6,7 @@ const typingElement = document.getElementById("typing");
 
 const roles = [
     "Full Stack Developer",
-    "MCA Student",
-    "Frontend Developer",
-    "MERN Stack Developer"
+    "MCA Student"
 ];
 
 let roleIndex = 0;
