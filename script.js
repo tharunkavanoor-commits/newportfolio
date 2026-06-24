@@ -159,6 +159,16 @@ const menuBtn =
 const navLinks =
     document.querySelector(".nav-links");
 
+// FIX: Add resume link inside mobile menu dynamically
+// so it appears when the hamburger menu opens
+const resumeURL = "https://raw.githubusercontent.com/tharunkavanoor-commits/portfolio/main/Tharun_Prasath_M_Resume.pdf";
+
+// Insert resume link as last item in nav on mobile
+const mobileResumeItem = document.createElement("li");
+mobileResumeItem.innerHTML = `<a href="${resumeURL}" class="mobile-resume" target="_blank" rel="noopener noreferrer">View Resume</a>`;
+mobileResumeItem.classList.add("mobile-resume-item");
+navLinks.appendChild(mobileResumeItem);
+
 menuBtn.addEventListener("click", () => {
 
     navLinks.classList.toggle("mobile-active");
@@ -225,9 +235,6 @@ window.addEventListener("scroll", () => {
 
         const sectionTop =
             section.offsetTop - 150;
-
-        const sectionHeight =
-            section.clientHeight;
 
         if (
             pageYOffset >= sectionTop
