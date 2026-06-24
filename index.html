@@ -29,8 +29,16 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <!-- ✅ FIX: Resume path corrected for GitHub Pages (file must be at assets/resume.pdf) -->
-    <a href="https://raw.githubusercontent.com/tharunkavanoor-commits/portfolio/main/Tharun_Prasath_M_Resume.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">
+    <!-- FIX 1: Resume button - works on both mobile and desktop -->
+    <!-- Using target="_blank" with rel for cross-browser/mobile compatibility -->
+    <!-- On mobile, browsers open PDFs in their built-in viewer instead of downloading -->
+    <a 
+      href="https://raw.githubusercontent.com/tharunkavanoor-commits/portfolio/main/Tharun_Prasath_M_Resume.pdf"
+      class="resume-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      id="resume-link"
+    >
       View Resume
     </a>
 
@@ -51,7 +59,7 @@
     <h2><span id="typing"></span></h2>
 
     <p>
-      MCA Student & Full Stack Developer passionate about building modern web
+      MCA Student &amp; Full Stack Developer passionate about building modern web
       applications using React, Node.js, Express.js and MongoDB.
     </p>
 
@@ -62,17 +70,14 @@
 
     <div class="social-icons">
 
-      <!-- ✅ FIX: Correct GitHub profile URL -->
       <a href="https://github.com/tharunkavanoor-commits" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
 
-      <!-- ✅ FIX: Real LinkedIn URL — update YOUR_LINKEDIN_USERNAME below -->
       <a href="https://www.linkedin.com/in/tharun-prasath-12a587281" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
 
-      <!-- ✅ FIX: Correct email address -->
       <a href="mailto:tharunkavanoor@gmail.com" aria-label="Send Email">
         <i class="fa-solid fa-envelope"></i>
       </a>
@@ -194,7 +199,7 @@
     <div class="experience-card">
       <h3>Full Stack Developer Intern</h3>
       <h4>Frontier Wox Tech Pvt Ltd</h4>
-      <p>Developed Sports Registration & Management System using MERN Stack.</p>
+      <p>Developed Sports Registration &amp; Management System using MERN Stack.</p>
     </div>
 
     <div class="experience-card">
@@ -218,20 +223,28 @@
 
     <div class="project-card">
       <h3>Sports Registration System</h3>
-      <p>Sports event registration, score management and result generation system.</p>
-      <span>React • Node • MongoDB</span>
+      <p>Sports event registration, score management and result generation system built during internship at Frontier Wox Tech Pvt Ltd.</p>
+      <span>React • Node.js • MongoDB</span>
     </div>
 
+    <!-- FIX 2: Updated from PDF - Veterinary Care project -->
     <div class="project-card">
-      <h3>Smart College Asset Management</h3>
-      <p>Centralized platform for tracking and managing college assets.</p>
-      <span>MERN Stack</span>
+      <h3>Veterinary Care for Animal Medical Solution</h3>
+      <p>Web-based platform for managing animal healthcare — digital health records, appointment scheduling, pharmacy management, and real-time alerts for pet owners, veterinarians, and admins.</p>
+      <span>Python • Django • HTML • CSS • JavaScript • SQLite</span>
     </div>
 
     <div class="project-card">
       <h3>Temple Visitor Guidance System</h3>
-      <p>Smart navigation and management system for temple visitors.</p>
+      <p>Smart navigation and management system for temple visitors, providing directions and queue management.</p>
       <span>Web Application</span>
+    </div>
+
+    <!-- FIX 3: Added Portfolio project -->
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>Fully responsive personal portfolio website showcasing skills, projects, experience and certifications with smooth scroll animations, typing effect, and counter animations.</p>
+      <span>HTML • CSS • JavaScript</span>
     </div>
 
   </div>
@@ -242,14 +255,14 @@
 <section class="section">
 
   <div class="section-title">
-    <h2>Research & Certifications</h2>
+    <h2>Research &amp; Certifications</h2>
   </div>
 
   <div class="certificate-grid">
 
     <div class="certificate-card">
       <h3>Research Paper</h3>
-      <p>AI Recommendation Systems & Agentic Paradigm</p>
+      <p>AI Recommendation Systems &amp; Agentic Paradigm</p>
     </div>
 
     <div class="certificate-card">
