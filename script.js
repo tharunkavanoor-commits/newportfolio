@@ -161,7 +161,7 @@ const navLinks =
 
 // FIX: Add resume link inside mobile menu dynamically
 // so it appears when the hamburger menu opens
-const resumeURL = "https://raw.githubusercontent.com/tharunkavanoor-commits/portfolio/main/Tharun_Prasath_M_Resume.pdf";
+const resumeURL = "Tharun_Prasath_M_Resume.pdf?v=2";
 
 // Insert resume link as last item in nav on mobile
 const mobileResumeItem = document.createElement("li");
